@@ -18,7 +18,7 @@ function setup() {
 }
 
 function draw() {
-    background(0);
+    background('rgba(80%,0%,100%,0.06)');
     var middleLineX = (windowWidth / 2) + cos(middleAngle) * 230;
     var middleLineY = (windowHeight / 2) + sin(middleAngle) * 230;
     middleAngle += middleSpeed;
@@ -49,6 +49,17 @@ function draw() {
     strokeWeight(outterOrbitLine);
     ellipse(windowWidth / 2, windowHeight / 2, 850, 850);
     fill(255, 102, 0);
+
+
+    // FAR-OUTTER ORBIT
+    // ellipse(outterFarLineX, outterFarLineY, 100, 100);
+    // noFill();
+    // stroke(255, 102, 0);
+    // xFarOutteroff = xFarOutteroff + 0.06;
+    // let faroutterOrbitLine = noise(xOutteroff) * 15;
+    // strokeWeight(faroutterOrbitLine);
+    // ellipse(windowWidth / 2, windowHeight / 2, 1050, 1050);
+    // fill(255, 102, 0);
 
     //  CENTER 
     ellipse(windowWidth / 2, windowHeight / 2, 100, 100);
