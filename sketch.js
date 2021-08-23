@@ -47,7 +47,6 @@ function draw() {
     }
 
 
-
     var middleLineX = (windowWidth / 2) + cos(middleAngle) * 230;
     var middleLineY = (windowHeight / 2) + sin(middleAngle) * 230;
     middleAngle += middleSpeed;
@@ -90,6 +89,7 @@ function draw() {
     stroke(255, 102, 0);
     xFarOutteroff = xFarOutteroff + 0.06;
     let faroutterOrbitLine = noise(xFarOutteroff) * 15;
+
     strokeWeight(faroutterOrbitLine);
     ellipse(windowWidth / 2, windowHeight / 2, 1250, 1250);
     fill(255, 102, 0);
